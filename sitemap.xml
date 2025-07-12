@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Main Pages -->
+    <url>
+        <loc>/</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>/index.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- UML Database Schema Page - HIGH PRIORITY -->
+    <url>
+        <loc>/uml.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Documentation Page -->
+    <url>
+        <loc>/docs.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Development Plan Page -->
+    <url>
+        <loc>/plan.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Manual Tests Page -->
+    <url>
+        <loc>/manual_tests.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Login Page -->
+    <url>
+        <loc>/login.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>rarely</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Development Section Pages - Lower Priority -->
+    <url>
+        <loc>/api.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>/django_setup.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>rarely</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>/docker_game.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>rarely</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>/modules.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>/json_intro.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>rarely</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <!-- Static Assets and Files -->
+    <url>
+        <loc>/robots.txt</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>/sitemap.xml</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <!-- Alternate Language Versions (Hash-based) -->
+    <url>
+        <loc>/#ja</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>/#ru</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>/#en</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 404 Error Page - For SEO Coverage -->
+    <url>
+        <loc>/404.html</loc>
+        <lastmod>2025-01-12</lastmod>
+        <changefreq>rarely</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+</urlset>
