@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>KyaMovVM v65 - Innovative Virtual Machine</title>
+  <meta name="description" content="KyaMovVM - modern virtual machine with web interface, React, TypeScript, Python backend and UML database schema. Open source project v65." />
+  <meta name="keywords" content="KyaMovVM, virtual machine, React, TypeScript, Python, Django, PostgreSQL, UML, database, web development, cyberpunk, open source, v65" />
+  <meta name="author" content="KyaMovVM Project" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="KyaMovVM v65 - Innovative Virtual Machine" />
+  <meta property="og:description" content="Modern virtual machine with web interface, React, TypeScript, Python backend and UML database schema." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KyaMovVM v65" />
+  <meta property="og:locale" content="ja_JP" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KyaMovVM v65 - Innovative Virtual Machine" />
+  <meta name="twitter:description" content="Modern virtual machine with web interface and cyberpunk aesthetic." />
+  
+  <!-- Theme and PWA -->
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- Performance Hints -->
+  <meta http-equiv="x-dns-prefetch-control" content="on" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//github.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+  
+  <!-- Critical CSS for LCP optimization -->
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeSpeed;
+    }
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #0a0a0f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid #1a1a2e;
+      border-top: 3px solid #00e5ff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="loading-container">
+      <div class="loading-spinner"></div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
