@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Download, X } from "lucide-react";

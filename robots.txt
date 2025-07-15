@@ -70,6 +70,8 @@ Disallow: /build/
 Allow: /404.html
 
 # Multi-domain sitemap locations
+
+Sitemap: https://kyamovvm.github.io/sitemap.xml
 Sitemap: https://kyamovvm.com/sitemap.xml
 
 # Crawl delay (1 second for respectful crawling)
@@ -120,8 +122,18 @@ User-agent: archive.org_bot
 Allow: /
 
 
+# Development and security note
+# This robots.txt is designed to balance:
+# 1. SEO visibility for main content
+# 2. Privacy for admin/security pages  
+# 3. Performance optimization
+# 4. International accessibility (ja/ru/en)
+# 5. Multi-domain support
+
 # Access URLs:
-# https://kyamovvm.com/robots.txt
+# Primary: https://kyamovvm.github.io/robots.txt
+# Mirror: https://kyamovvm.com/robots.txt
+
 # If kyamovvm.com/robots.txt returns 404, ensure:
 # 1. DNS CNAME record points to kyamovvm.github.io
 # 2. GitHub Pages custom domain is configured 
