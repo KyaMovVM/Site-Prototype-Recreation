@@ -1,0 +1,49 @@
+# KyaMovVM v65 Docker Compose Configuration
+# Production-ready setup with health checks and security
+
+version: '3.8'
+
+services:
+  kyamovvm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_ENV: production
+    container_name: kyamovvm-v65
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+      - TZ=UTC
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "com.kyamovvm.version=65.0.0"
+      - "com.kyamovvm.description=KyaMovVM - Innovative virtual machine"
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:noexec,nosuid,size=100m
+      - /var/run:noexec,nosuid,size=100m
+      - /var/cache/nginx:noexec,nosuid,size=100m
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - kyamovvm-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  kyamovvm-network:
+    driver: bridge
+    name: kyamovvm-v65-network
