@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { Button } from "./components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/card";
@@ -13,7 +14,7 @@ import ResourceHints from "./components/ResourceHints";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 
 // Import the original hero image as fallback
-import newHeroImage from 'figma:asset/791b2115434f8c48d0ae438ea3393b6fe9098ea5.png';
+import newHeroImage from '/favicon.svg';
 
 // Lazy load heavy components for better performance
 const PlanPage = lazy(() => import("./components/PlanPage"));

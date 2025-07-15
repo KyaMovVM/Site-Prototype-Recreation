@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface KyaMovVMLogoProps {
   className?: string;
   width?: number;

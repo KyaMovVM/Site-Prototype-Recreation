@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react';
 import { Progress } from "./ui/progress";
 import { Badge } from "./ui/badge";

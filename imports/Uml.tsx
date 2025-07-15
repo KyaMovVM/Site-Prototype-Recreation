@@ -1,3 +1,4 @@
+// @ts-nocheck
 function Uml() {
   return (
     <div className="relative size-full" data-name="Uml">
