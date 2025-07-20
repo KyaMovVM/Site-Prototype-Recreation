@@ -1,0 +1,27 @@
+/* Japanese-Inspired Design Tokens */
+:root {
+  /* Цвета */
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F5;
+  --color-primary: #FF3366;   /* Sakura pink акцент */
+  --color-secondary: #222222; /* Тёмный текст */
+  --color-accent: #00C9A7;    /* Aqua mochi */
+  --color-neutral-light: #E0E0E0;
+  --color-neutral-dark: #444444;
+
+  /* Типографика */
+  --font-family-base: 'Noto Sans JP', sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Сетка и отступы */
+  --spacing-unit: 8px;
+  --spacing-gutter: 24px;
+  --container-max-width: 1200px;
+
+  /* Анимации и переходы */
+  --transition-default: all 200ms ease-in-out;
+}

@@ -1,3 +1,4 @@
+@import "./design-tokens-jp.css";
 @custom-variant dark (&:is(.dark *));
 
 :root {

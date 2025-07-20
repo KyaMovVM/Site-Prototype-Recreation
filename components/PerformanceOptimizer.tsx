@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Switch } from "./ui/switch";
-import { Zap, Turtle, Rabbit, Wifi, WifiOff, Gauge, Settings } from "lucide-react";
+import { Zap, Wifi, WifiOff, Gauge, Settings, TrendingDown } from "lucide-react";
 
 interface PerformanceOptimizerProps {
   language: 'ja' | 'ru' | 'en';

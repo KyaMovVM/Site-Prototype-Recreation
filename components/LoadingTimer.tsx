@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { Timer, Zap, Turtle, Rabbit, Settings, TrendingUp, Loader2 } from "lucide-react";
+import { Timer, Zap, Settings, Loader2 } from "lucide-react";
 
 interface LoadingTimerProps {
   language: 'ja' | 'ru' | 'en';

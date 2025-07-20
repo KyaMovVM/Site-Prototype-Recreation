@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { ArrowLeft, Maximize2, Minimize2, Download, Search, Database, Grid3X3, Layers, Code2 } from "lucide-react";
+import { ArrowLeft, Maximize2, Minimize2, Download, Search, Database, Layers, Code2, Grid } from "lucide-react";
 import UMLModal from "./UMLModal";
 import Uml from "../imports/Uml";
 
@@ -319,7 +319,7 @@ Distributions Table:
               <CardTitle className={`font-bold flex items-center justify-center space-x-2 ${
                 highContrastMode ? 'text-white' : 'text-cyber-cyan'
               }`}>
-                <Grid3X3 className="w-5 h-5" />
+                <Grid className="w-5 h-5" />
                 <span>{t.features.comprehensive}</span>
               </CardTitle>
             </CardHeader>
