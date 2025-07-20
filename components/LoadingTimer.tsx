@@ -298,7 +298,7 @@ export default function LoadingTimer({
                 </span>
               </div>
               {isOptimized && (
-                <Rabbit className="w-3 h-3 text-cyber-neon-green" />
+                <Zap className="w-3 h-3 text-cyber-neon-green" />
               )}
             </div>
           )}
@@ -402,12 +402,12 @@ export default function LoadingTimer({
                   <div className="flex items-center space-x-1">
                     {isOptimized ? (
                       <>
-                        <Rabbit className="w-3 h-3" />
+                        <Zap className="w-3 h-3" />
                         <span>{t.optimizeMode}</span>
                       </>
                     ) : (
                       <>
-                        <Turtle className="w-3 h-3" />
+                        <Settings className="w-3 h-3" />
                         <span>{t.normalMode}</span>
                       </>
                     )}

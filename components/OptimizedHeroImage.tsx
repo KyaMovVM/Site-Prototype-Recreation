@@ -222,7 +222,7 @@ export default function OptimizedHeroImage({
         style={style}
         loading={loading}
         decoding="sync"
-        fetchPriority="high"
+        fetchpriority="high"
         onLoad={() => setIsLoaded(true)}
         onError={() => setError(true)}
       />

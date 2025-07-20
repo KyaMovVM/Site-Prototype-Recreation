@@ -762,15 +762,15 @@ export default function App() {
         title: "Home", 
         label: language === 'ja' ? 'ホーム' : language === 'ru' ? 'Главная' : 'Home',
         icon: Home,
-        color: 'cyber-cyan'
+        color: 'primary'
       },
       { 
         id: 'uml', 
         href: "uml.html", 
         title: "UML Database Schema", 
         label: "UML DB", 
-        icon: Database,
-        color: 'cyber-purple',
+      icon: Database,
+        color: 'accent',
         highlight: true 
       },
       { 
@@ -779,7 +779,7 @@ export default function App() {
         title: "Documentation", 
         label: language === 'ja' ? 'ドキュメント' : language === 'ru' ? 'Документация' : 'Documentation',
         icon: FileText,
-        color: 'cyber-cyan'
+        color: 'accent'
       },
       { 
         id: 'plan', 
@@ -787,7 +787,7 @@ export default function App() {
         title: "Development Plan", 
         label: language === 'ja' ? 'プラン' : language === 'ru' ? 'План' : 'Plan',
         icon: Settings,
-        color: 'cyber-pink'
+        color: 'secondary'
       },
       { 
         id: 'manual_tests', 
@@ -795,21 +795,21 @@ export default function App() {
         title: "Manual Tests", 
         label: language === 'ja' ? '手動テスト' : language === 'ru' ? 'Ручные тесты' : 'Manual Tests',
         icon: TestTube,
-        color: 'cyber-neon-green'
+        color: 'accent'
       }
     ],
     development: [
-      { id: 'api', href: "api.html", title: "API Logs", label: language === 'ja' ? "API ログ" : language === 'ru' ? "API Логи" : "API Logs", icon: Code, color: 'cyber-cyan' },
-      { id: 'django_setup', href: "django_setup.html", title: "Django Setup", label: language === 'ja' ? "Django セットアップ" : language === 'ru' ? "Настройка Django" : "Django Setup", icon: Settings, color: 'cyber-purple' },
-      { id: 'docker_game', href: "docker_game.html", title: "Docker Game", label: language === 'ja' ? "Docker ゲーム" : language === 'ru' ? "Docker Игра" : "Docker Game", icon: Code, color: 'cyber-pink' },
-      { id: 'modules', href: "modules.html", title: "Modules", label: language === 'ja' ? 'モジュール' : language === 'ru' ? 'Модули' : 'Modules', icon: Settings, color: 'cyber-electric-blue' },
-      { id: 'json_intro', href: "json_intro.html", title: "JSON Schema", label: language === 'ja' ? "JSON スキーマ" : language === 'ru' ? "JSON Схема" : "JSON Schema", icon: Code, color: 'cyber-light-cyan' }
+      { id: 'api', href: "api.html", title: "API Logs", label: language === 'ja' ? "API ログ" : language === 'ru' ? "API Логи" : "API Logs", icon: Code, color: 'primary' },
+      { id: 'django_setup', href: "django_setup.html", title: "Django Setup", label: language === 'ja' ? "Django セットアップ" : language === 'ru' ? "Настройка Django" : "Django Setup", icon: Settings, color: 'accent' },
+      { id: 'docker_game', href: "docker_game.html", title: "Docker Game", label: language === 'ja' ? "Docker ゲーム" : language === 'ru' ? "Docker Игра" : "Docker Game", icon: Code, color: 'primary' },
+      { id: 'modules', href: "modules.html", title: "Modules", label: language === 'ja' ? 'モジュール' : language === 'ru' ? 'Модули' : 'Modules', icon: Settings, color: 'secondary' },
+      { id: 'json_intro', href: "json_intro.html", title: "JSON Schema", label: language === 'ja' ? "JSON スキーマ" : language === 'ru' ? "JSON Схема" : "JSON Schema", icon: Code, color: 'accent' }
     ],
     security: [
-      { id: 'fail2ban', href: "fail2ban.html", title: "Fail2Ban", label: "Fail2Ban", icon: Shield, color: 'cyber-pink' },
-      { id: 'control', href: "control.html", title: "Control", label: language === 'ja' ? 'コントロール' : language === 'ru' ? 'Управление' : 'Control', icon: Settings, color: 'cyber-purple' },
-      { id: 'login', href: "login.html", title: "Login", label: language === 'ja' ? 'ログイン' : language === 'ru' ? 'Вход' : 'Login', icon: Shield, color: 'cyber-neon-green' },
-      { id: 'crossref', href: "crossref.html", title: "Cross References", label: language === 'ja' ? 'クロスリファレンス' : language === 'ru' ? 'Перекрестные ссылки' : 'Cross References', icon: Database, color: 'cyber-light-pink' }
+      { id: 'fail2ban', href: "fail2ban.html", title: "Fail2Ban", label: "Fail2Ban", icon: Shield, color: 'primary' },
+      { id: 'control', href: "control.html", title: "Control", label: language === 'ja' ? 'コントロール' : language === 'ru' ? 'Управление' : 'Control', icon: Settings, color: 'accent' },
+      { id: 'login', href: "login.html", title: "Login", label: language === 'ja' ? 'ログイン' : language === 'ru' ? 'Вход' : 'Login', icon: Shield, color: 'secondary' },
+      { id: 'crossref', href: "crossref.html", title: "Cross References", label: language === 'ja' ? 'クロスリファレンス' : language === 'ru' ? 'Перекрестные ссылки' : 'Cross References', icon: Database, color: 'primary' }
     ]
   };
 
@@ -1140,7 +1140,7 @@ export default function App() {
   const renderHomePage = () => (
     <div>
       {/* Hero Section with ULTRA-Optimized Image - LCP Critical */}
-      <section className="section-spacing px-4 relative hero-container lcp-element">
+      <section className="section-spacing px-gutter relative hero-container lcp-element">
         {/* Enhanced Animated Background - FIXED: No rotation */}
         <div className="cyber-bg-pattern">
           <div className="absolute inset-0 bg-gradient-to-br from-cyber-dark via-cyber-dark-secondary to-cyber-dark"></div>
@@ -1338,7 +1338,7 @@ export default function App() {
       </section>
 
       {/* Database Schema Preview Section */}
-      <section className="section-spacing px-4 relative">
+      <section className="section-spacing px-gutter relative">
         <div className="absolute inset-0 bg-gradient-to-r from-cyber-purple/10 via-transparent to-cyber-cyan/10"></div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-8 md:mb-12">
@@ -1444,7 +1444,7 @@ export default function App() {
       </section>
 
       {/* Features Section */}
-      <section className="section-spacing px-4 relative">
+      <section className="section-spacing px-gutter relative">
         <div className="absolute inset-0 bg-gradient-to-r from-cyber-dark/80 to-cyber-dark-secondary/80"></div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-8 md:mb-12">
@@ -1544,7 +1544,7 @@ export default function App() {
       </section>
 
       {/* 3D Car Demo Section - Lazy loaded */}
-      <section className="section-spacing px-4 relative">
+      <section className="section-spacing px-gutter relative">
         <div className="cyber-grid-pattern opacity-20"></div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-8 md:mb-12">
@@ -1569,7 +1569,7 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="section-spacing px-4 relative">
+      <section id="about" className="section-spacing px-gutter relative">
         <div className="absolute inset-0 bg-gradient-to-l from-cyber-dark/80 to-cyber-dark-secondary/80"></div>
         <div className="container mx-auto relative z-10">
           <h2 className={`text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 ${
@@ -1787,7 +1787,7 @@ export default function App() {
       <header className={`header fixed top-0 left-0 right-0 backdrop-blur-sm border-b z-50 ${
         highContrastMode 
           ? 'bg-black/95 border-white/20' 
-          : 'bg-background/95 border-cyber-cyan/20'
+          : 'bg-surface/95 border-primary/20'
       }`}>
         <div className="container mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
@@ -1812,26 +1812,26 @@ export default function App() {
               <div className="flex items-center space-x-1 mb-1">
                 {navigationGroups.main.map((link) => {
                   const IconComponent = link.icon;
+                  const isActive = currentPage === link.id;
+                  const activeStyles = highContrastMode
+                    ? 'text-black bg-white border-2 border-white shadow-lg'
+                    : link.highlight
+                    ? `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`
+                    : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`;
+                  const inactiveStyles = highContrastMode
+                    ? 'text-white hover:bg-white/20 border-2 border-white/50'
+                    : `text-${link.color} hover:bg-${link.color}/10 border border-transparent hover:border-${link.color}/30`;
+
                   return (
-                    <button 
+                    <button
                       key={link.id}
-                      className={`nav-button-enhanced hover:opacity-90 transition-all duration-300 whitespace-nowrap text-xs px-3 py-2 rounded-lg font-bold flex items-center space-x-1.5 ${
-                        currentPage === link.id 
-                          ? (highContrastMode 
-                              ? 'text-black bg-white border-2 border-white shadow-lg' 
-                              : link.highlight 
-                                ? `text-white bg-${link.color} border border-${link.color}/20 cyber-glow-purple shadow-lg`
-                                : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`
-                            )
-                          : (highContrastMode 
-                              ? 'text-white hover:bg-white/20 border-2 border-white/50 hover:border-white' 
-                              : `text-${link.color} hover:bg-${link.color}/10 border border-transparent hover:border-${link.color}/30`
-                            )
+                      className={`nav-button-enhanced flex items-center space-x-2 ${
+                        isActive ? activeStyles : inactiveStyles
                       }`}
                       onClick={() => handleNavigation(link.id)}
                       title={link.title}
                     >
-                      <IconComponent className="w-3.5 h-3.5" />
+                      <IconComponent className="w-5 h-5" />
                       <span>{link.label}</span>
                     </button>
                   );
@@ -1842,12 +1842,12 @@ export default function App() {
               <div className="flex items-center space-x-1">
                 {/* Development Dropdown with FIXED positioning */}
                 <div className="dropdown-container relative">
-                  <button 
+                  <button
                     data-dropdown="development"
-                    className={`nav-button-enhanced hover:opacity-90 transition-all duration-300 whitespace-nowrap text-xs px-3 py-2 rounded-lg font-bold flex items-center space-x-1 ${
-                      highContrastMode 
-                        ? 'text-white hover:bg-white/20 border-2 border-white/50 hover:border-white' 
-                        : 'text-cyber-cyan hover:bg-cyber-cyan/10 border border-transparent hover:border-cyber-cyan/30'
+                    className={`nav-button-enhanced flex items-center space-x-2 ${
+                      highContrastMode
+                        ? 'text-white hover:bg-white/20 border-2 border-white/50'
+                        : 'text-primary hover:bg-primary/10 border border-transparent hover:border-primary/30'
                     }`}
                     onClick={(e) => {
                       e.stopPropagation();
@@ -2058,8 +2058,8 @@ export default function App() {
 
           {/* Enhanced Mobile Menu with better navigation */}
           {isMenuOpen && (
-            <div className={`lg:hidden mt-4 pb-4 border-t ${
-              highContrastMode ? 'border-white/20' : 'border-cyber-cyan/20'
+            <div className={`lg:hidden mt-4 pb-4 border-t bg-surface ${
+              highContrastMode ? 'border-white/20' : 'border-primary/20'
             }`}>
               <nav className="pt-4" role="navigation" aria-label="モバイルメニュー">
                 {/* Main Pages */}
@@ -2073,26 +2073,26 @@ export default function App() {
                   <div className="space-y-1">
                     {navigationGroups.main.map((link) => {
                       const IconComponent = link.icon;
+                      const isActive = currentPage === link.id;
+                      const activeStyles = highContrastMode
+                        ? 'text-black bg-white border-2 border-white shadow-lg'
+                        : link.highlight
+                        ? `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`
+                        : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`;
+                      const inactiveStyles = highContrastMode
+                        ? 'text-white hover:bg-white/20 border-2 border-white/50'
+                        : `text-${link.color} hover:bg-${link.color}/10 border border-transparent`;
+
                       return (
-                        <button 
+                        <button
                           key={link.id}
-                          className={`w-full text-left hover:opacity-90 transition-all duration-300 text-sm py-3 px-3 rounded-lg font-bold flex items-center space-x-3 ${
-                            currentPage === link.id 
-                              ? (highContrastMode 
-                                  ? 'text-black bg-white border-2 border-white shadow-lg' 
-                                  : link.highlight 
-                                    ? `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`
-                                    : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`
-                                )
-                              : (highContrastMode 
-                                  ? 'text-white hover:bg-white/20 border-2 border-white/50' 
-                                  : `text-${link.color} hover:bg-${link.color}/10 border border-transparent`
-                                )
+                          className={`nav-button-enhanced w-full justify-start flex items-center space-x-2 ${
+                            isActive ? activeStyles : inactiveStyles
                           }`}
                           onClick={() => handleNavigation(link.id)}
                           title={link.title}
                         >
-                          <IconComponent className="w-4 h-4" />
+                          <IconComponent className="w-5 h-5" />
                           <span>{link.label}</span>
                         </button>
                       );
@@ -2111,18 +2111,24 @@ export default function App() {
                   <div className="space-y-1">
                     {navigationGroups.development.map((link) => {
                       const IconComponent = link.icon;
+                      const isActive = currentPage === link.id;
+                      const activeStyles = highContrastMode
+                        ? 'text-black bg-white border-2 border-white shadow-lg'
+                        : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`;
+                      const inactiveStyles = highContrastMode
+                        ? 'text-white hover:bg-white/20 border-2 border-white/50'
+                        : `text-${link.color} hover:bg-${link.color}/10 border border-transparent`;
+
                       return (
-                        <button 
+                        <button
                           key={link.id}
-                          className={`w-full text-left hover:opacity-90 transition-all duration-300 text-sm py-3 px-3 rounded-lg font-bold flex items-center space-x-3 ${
-                            currentPage === link.id 
-                              ? (highContrastMode ? 'text-black bg-white border-2 border-white shadow-lg' : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`)
-                              : (highContrastMode ? 'text-white hover:bg-white/20 border-2 border-white/50' : `text-${link.color} hover:bg-${link.color}/10 border border-transparent`)
+                          className={`nav-button-enhanced w-full justify-start flex items-center space-x-2 ${
+                            isActive ? activeStyles : inactiveStyles
                           }`}
                           onClick={() => handleNavigation(link.id)}
                           title={link.title}
                         >
-                          <IconComponent className="w-4 h-4" />
+                          <IconComponent className="w-5 h-5" />
                           <span>{link.label}</span>
                         </button>
                       );
@@ -2141,18 +2147,24 @@ export default function App() {
                   <div className="space-y-1">
                     {navigationGroups.security.map((link) => {
                       const IconComponent = link.icon;
+                      const isActive = currentPage === link.id;
+                      const activeStyles = highContrastMode
+                        ? 'text-black bg-white border-2 border-white shadow-lg'
+                        : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`;
+                      const inactiveStyles = highContrastMode
+                        ? 'text-white hover:bg-white/20 border-2 border-white/50'
+                        : `text-${link.color} hover:bg-${link.color}/10 border border-transparent`;
+
                       return (
-                        <button 
+                        <button
                           key={link.id}
-                          className={`w-full text-left hover:opacity-90 transition-all duration-300 text-sm py-3 px-3 rounded-lg font-bold flex items-center space-x-3 ${
-                            currentPage === link.id 
-                              ? (highContrastMode ? 'text-black bg-white border-2 border-white shadow-lg' : `text-white bg-${link.color} border border-${link.color}/20 shadow-lg`)
-                              : (highContrastMode ? 'text-white hover:bg-white/20 border-2 border-white/50' : `text-${link.color} hover:bg-${link.color}/10 border border-transparent`)
+                          className={`nav-button-enhanced w-full justify-start flex items-center space-x-2 ${
+                            isActive ? activeStyles : inactiveStyles
                           }`}
                           onClick={() => handleNavigation(link.id)}
                           title={link.title}
                         >
-                          <IconComponent className="w-4 h-4" />
+                          <IconComponent className="w-5 h-5" />
                           <span>{link.label}</span>
                         </button>
                       );
